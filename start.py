@@ -700,11 +700,11 @@ def cfb(event, socks_type):
             s.close()
 
 
-# def tor(event, socks_type):
-    # event.wait()
-    # while time.time() < timer:
-        # with tor_requests_session() as s:
-            # s.get(sys.argv[2])
+ def tor(event, socks_type):
+     event.wait()
+     while time.time() < timer:
+         with tor_requests_session() as s:
+             s.get(sys.argv[2])
 
 
 def AVB(event, socks_type):
